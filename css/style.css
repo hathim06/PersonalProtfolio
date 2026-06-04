@@ -2095,3 +2095,615 @@ span.error {
 .gsap-reveal-img .reveal-wrap .reveal-content .portfolio-item-content h3 {
   margin-bottom: 10px;
 }
+
+/* ==========================================================================
+   Upgraded Portfolio & Filters
+   ========================================================================== */
+.portfolio-filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 45px;
+  z-index: 10;
+}
+
+.portfolio-filter-btn {
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.portfolio-filter-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.portfolio-filter-btn.active {
+  background: #d63447;
+  color: #fff;
+  border-color: #d63447;
+  box-shadow: 0 4px 15px rgba(214, 52, 71, 0.4);
+}
+
+/* Portfolio Grid Card Enhancements */
+.portfolio-item {
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 260px;
+  position: relative;
+}
+
+.portfolio-item img {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.portfolio-item .overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%) !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.portfolio-item .overlay:before {
+  display: none !important; /* Remove original plain overlay background */
+}
+
+.portfolio-item .portfolio-item-content {
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(214, 52, 71, 0.6);
+  box-shadow: 0 12px 30px rgba(214, 52, 71, 0.15);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08) !important;
+  filter: brightness(0.7) blur(1px);
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Custom Tag Badges */
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.portfolio-tag {
+  font-size: 9px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: "Arimo", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.portfolio-tag:hover {
+  background: #d63447;
+  border-color: #d63447;
+  color: #fff;
+}
+
+.portfolio-item .wrap-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  right: 20px !important;
+  top: 20px !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+.portfolio-item:hover .wrap-icon {
+  background: #d63447 !important;
+  border-color: #d63447 !important;
+  transform: scale(1.1) !important;
+}
+
+/* ========================
+   PROJECT TYPE BADGES
+   ======================== */
+.project-type-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 15;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: "Arimo", sans-serif;
+  pointer-events: none;
+}
+.project-type-badge.personal-badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.project-type-badge.client-badge {
+  background: rgba(214, 52, 71, 0.2);
+  color: #ff7a88;
+  border: 1px solid rgba(214, 52, 71, 0.5);
+}
+
+/* ========================
+   CV MODAL
+   ======================== */
+.cv-modal-content {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+.cv-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  z-index: 30;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0;
+}
+.cv-close-btn:hover {
+  color: #fff;
+}
+.cv-wrapper {
+  display: flex;
+  min-height: 580px;
+}
+/* --- Left sidebar --- */
+.cv-left {
+  width: 270px;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, #1c1c1c 0%, #0d0d0d 100%);
+  padding: 36px 24px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+.cv-avatar-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px;
+  border: 3px solid rgba(214, 52, 71, 0.45);
+}
+.cv-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.cv-name-block {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.cv-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+.cv-name span {
+  color: #d63447;
+}
+.cv-role {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 5px 0 0;
+  font-family: "Arimo", sans-serif;
+}
+.cv-section-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #d63447;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(214, 52, 71, 0.2);
+}
+.cv-contact-block {
+  margin-bottom: 26px;
+}
+.cv-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Arimo", sans-serif;
+  line-height: 1.5;
+}
+.cv-contact-icon {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+.cv-skills-block {
+  margin-bottom: 26px;
+}
+.cv-skill-item {
+  margin-bottom: 13px;
+}
+.cv-skill-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Arimo", sans-serif;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.cv-skill-label span {
+  color: rgba(255, 255, 255, 0.35);
+}
+.cv-skill-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cv-skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d63447, #ff7a88);
+  border-radius: 4px;
+}
+.cv-social-block {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.cv-social-link {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 11px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: "Arimo", sans-serif;
+  transition: all 0.2s;
+}
+.cv-social-link:hover {
+  color: #fff;
+  border-color: #d63447;
+  background: rgba(214, 52, 71, 0.1);
+}
+/* --- Right content --- */
+.cv-right {
+  flex: 1;
+  padding: 36px 32px;
+  background: #111;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+.cv-section {
+  margin-bottom: 32px;
+}
+.cv-right-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: "Arimo", sans-serif;
+}
+.cv-about-text {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.85;
+  font-family: "Arimo", sans-serif;
+}
+.cv-project-item {
+  padding: 15px 17px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s;
+}
+.cv-project-item:hover {
+  border-color: rgba(214, 52, 71, 0.2);
+}
+.cv-project-item.client-proj {
+  border-color: rgba(214, 52, 71, 0.18);
+  background: rgba(214, 52, 71, 0.04);
+}
+.cv-project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.cv-project-item h4 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0 0 6px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.cv-project-header h4 {
+  margin: 0;
+}
+.cv-badge-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  font-family: "Arimo", sans-serif;
+}
+.cv-badge-label.client-lbl {
+  background: rgba(214, 52, 71, 0.18);
+  color: #ff7a88;
+  border: 1px solid rgba(214, 52, 71, 0.4);
+}
+.cv-project-item p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 10px;
+  font-family: "Arimo", sans-serif;
+  line-height: 1.6;
+}
+.cv-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.cv-project-tags span {
+  font-size: 9px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: "Arimo", sans-serif;
+}
+.cv-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .cv-wrapper {
+    flex-direction: column;
+  }
+  .cv-left {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 28px 22px;
+  }
+  .cv-right {
+    padding: 26px 20px;
+    max-height: none;
+  }
+  .cv-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================
+   SKILLS SECTION UPGRADE
+   ======================== */
+.skill-category-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.skill-category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #d63447, #ff7a88);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(214, 52, 71, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(214, 52, 71, 0.05);
+}
+
+.skill-category-card:hover::before {
+  opacity: 1;
+}
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.skill-category-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(214, 52, 71, 0.1);
+  border: 1px solid rgba(214, 52, 71, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7a88;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.skill-category-card:hover .skill-category-icon {
+  background: #d63447;
+  color: #fff;
+  border-color: #d63447;
+  transform: scale(1.05);
+}
+
+.skill-category-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.skill-category-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.skill-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge-item {
+  font-size: 12.5px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-family: "Arimo", sans-serif;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.skill-badge-item:hover {
+  background: rgba(214, 52, 71, 0.12);
+  border-color: #d63447;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ========================
+   CV MODAL SKILLS CATEGORIES
+   ======================== */
+.cv-skill-category {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.cv-skill-cat-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: "Arimo", sans-serif;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.cv-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cv-skill-tags span {
+  font-size: 9.5px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  transition: all 0.2s ease;
+}
+
+.cv-skill-tags span:hover {
+  background: rgba(214, 52, 71, 0.15);
+  border-color: #d63447;
+  color: #fff;
+  transform: translateY(-1px);
+}
+

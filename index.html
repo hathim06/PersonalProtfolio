@@ -1,62 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Hathim</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
+<head>
+  <title>Hathim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css">
-            <link rel="icon" type="image/x-icon" href="images/main.jpg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="description" content="">
+  <meta name="keywords" content="html, css, javascript, jquery">
+  <meta name="author" content="">
 
-    <style>
-      html,body{
-        overflow-x: hidden;
-      }
-    </style>
+  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/vendor/animate.min.css">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/main.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  </style>
 
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
+</head>
 
+<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
 
-    <div class="unslate_co--site-wrap">
-
-      <div class="unslate_co--site-inner">
-
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
+  <nav class="unslate_co--site-mobile-menu">
+    <div class="close-wrap d-flex">
+      <a href="#" class="d-flex ml-auto js-menu-toggle">
+        <span class="close-label">Close</span>
+        <div class="close-times">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
         </div>
-        <!-- END lines -->
-      
+      </a>
+    </div>
+    <div class="site-mobile-inner"></div>
+  </nav>
+
+
+  <div class="unslate_co--site-wrap">
+
+    <div class="unslate_co--site-inner">
+
+      <div class="lines-wrap">
+        <div class="lines-inner">
+          <div class="lines"></div>
+        </div>
+      </div>
+      <!-- END lines -->
+
       <nav class="unslate_co--site-nav site-nav-target">
 
         <div class="container">
-        
+
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
@@ -107,10 +110,10 @@
       <div class="cover-v1 jarallax" style="background-image: url('images/main.jpg');" id="home-section">
         <div class="container">
           <div class="row align-items-center">
-              
+
             <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">Hathim</h1>
-              <h2 class="subheading gsap-reveal-hero">Passionate about coding and problem solving</h2>
+              <h1 class="heading gsap-reveal-hero">Hathim Mohammed</h1>
+              <h2 class="subheading gsap-reveal-hero">Passionate about web development & designs</h2>
             </div>
 
           </div>
@@ -130,63 +133,172 @@
 
       <div class="unslate_co--section" id="portfolio-section">
         <div class="container">
-          
-          
-          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+
+
+          <div class="relative">
+            <div class="loader-portfolio-wrap">
+              <div class="loader-portfolio"></div>
+            </div>
+          </div>
           <div id="portfolio-single-holder"></div>
 
           <div class="portfolio-wrapper">
 
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
+            <div class="d-flex flex-column align-items-center mb-5 gsap-reveal gsap-reveal-filter">
+              <h2 class="heading-h2 mb-4"><span class="gsap-reveal">Portfolio</span></h2>
+              <div id="filters" class="portfolio-filter-container">
+                <a href="#" class="portfolio-filter-btn active" data-filter="*">All</a>
+                <a href="#" class="portfolio-filter-btn" data-filter=".landing">Landing Pages</a>
+                <a href="#" class="portfolio-filter-btn" data-filter=".webapp">E-Commerce & Apps</a>
+                <a href="#" class="portfolio-filter-btn" data-filter=".clones">Clones & Sites</a>
+              </div>
             </div>
 
-
-            
             <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-<a href="https://hathim06.github.io/7UP/" target="_blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Static Website</h3>
-                        <p>7UP Clone</p>
+              <!-- Mango Juice Landing Page -->
+              <div class="item landing col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/work-mango.jpg" data-fancybox="portfolio"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-search-plus"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Mango Juice UI</h3>
+                      <p>Landing Page</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Bootstrap</span>
+                        <span class="portfolio-tag">JS</span>
                       </div>
                     </div>
-                    <img src="images/work-1.png" class="lazyload  img-fluid" alt="Images" />
-                  </a>
+                  </div>
+                  <img src="images/work-mango.jpg" class="lazyload img-fluid" alt="Mango Juice Landing Page" />
+                </a>
               </div>
 
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-<a href="https://hathim06.github.io/starbucks/" target="_blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Static Website</h3>
-                        <p>Starbucks Clone</p>
+              <!-- Trufit Smartwatch -->
+              <div class="item webapp col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/work-trufit.jpg" data-fancybox="portfolio"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-search-plus"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Trufit Smartwatch</h3>
+                      <p>E-Commerce Landing Page</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">UX/UI</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Interactive</span>
                       </div>
                     </div>
-                    <img src="images/work-2.png" class="lazyload  img-fluid" alt="Images" />
-                  </a>
+                  </div>
+                  <img src="images/work-trufit.jpg" class="lazyload img-fluid" alt="Trufit Smartwatch Store" />
+                </a>
               </div>
 
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-
-<a href="https://hathim06.github.io/personalSite/" target="_blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Responsive Website</h3>
-                        <p>Personal Site</p>
+              <!-- Pomegranate Juice Landing Page -->
+              <div class="item landing col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="images/work-pomegranate.jpg" data-fancybox="portfolio"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="3">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-search-plus"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Pomegranate Juice UI</h3>
+                      <p>Landing Page</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Bootstrap</span>
+                        <span class="portfolio-tag">JS</span>
                       </div>
                     </div>
-                    <img src="images/work-3.png" class="lazyload  img-fluid" alt="Images" />
-                  </a>
+                  </div>
+                  <img src="images/pomogranate.jpeg" class="lazyload img-fluid" alt="Pomegranate Juice Landing Page" />
+                </a>
+              </div>
 
+              <!-- Root Millers Rewards -->
+              <div class="item webapp col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="https://the50fest.com/" target="_blank" class="portfolio-item isotope-item gsap-reveal-img"
+                  data-id="4">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-link"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Root Millers</h3>
+                      <p>E-Commerce Website</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Bootstrap</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="images/rootmillers.png" class="lazyload img-fluid" alt="Root Millers Rewards" />
+                </a>
+              </div>
+
+              <!-- 7UP Clone -->
+              <div class="item clones col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="https://hathim06.github.io/7UP/" target="_blank"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="5">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-link"></span>
+                    <div class="portfolio-item-content">
+                      <h3>7UP Clone</h3>
+                      <p>Static Website</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Bootstrap</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="images/work-1.png" class="lazyload img-fluid" alt="7UP Clone" />
+                </a>
+              </div>
+
+              <!-- Starbucks Clone -->
+              <div class="item clones col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="https://hathim06.github.io/starbucks/" target="_blank"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="6">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-link"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Starbucks Clone</h3>
+                      <p>Static Website</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">Bootstrap</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="images/work-2.png" class="lazyload img-fluid" alt="Starbucks Clone" />
+                </a>
+              </div>
+
+              <!-- Personal Site -->
+              <div class="item clones col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="https://hathim06.github.io/personalSite/" target="_blank"
+                  class="portfolio-item isotope-item gsap-reveal-img" data-id="7">
+                  <div class="overlay">
+                    <span class="wrap-icon icon-link"></span>
+                    <div class="portfolio-item-content">
+                      <h3>Personal Site</h3>
+                      <p>Responsive Website</p>
+                      <div class="portfolio-tags">
+                        <span class="portfolio-tag">HTML5</span>
+                        <span class="portfolio-tag">CSS3</span>
+                        <span class="portfolio-tag">JS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="images/work-3.png" class="lazyload img-fluid" alt="Personal Site" />
+                </a>
               </div>
 
             </div>
-            
+
           </div>
 
 
@@ -198,13 +310,13 @@
         <div class="container">
           <div class="owl-carousel logo-slider">
             <div class="logo-v1 gsap-reveal">
-              <img src="images/caseout.jpg" alt="Image" class="img-fluid"style="height:100px;width:100px;">
+              <img src="images/caseout.jpg" alt="Image" class="img-fluid" style="height:100px;width:100px;">
             </div>
             <div class="logo-v1 gsap-reveal">
-              <img src="images/7up-logo-large.png" alt="Image" class="img-fluid"style="height:100px;width:100px;">
+              <img src="images/7up-logo-large.png" alt="Image" class="img-fluid" style="height:100px;width:100px;">
             </div>
             <div class="logo-v1 gsap-reveal">
-              <img src="images/Starbucks-logo.png" alt="Image" class="img-fluid"style="height:100px;width:100px;">
+              <img src="images/Starbucks-logo.png" alt="Image" class="img-fluid" style="height:100px;width:100px;">
             </div>
           </div>
         </div>
@@ -213,14 +325,14 @@
 
       <div class="unslate_co--section" id="about-section">
         <div class="container">
-          
+
           <div class="section-heading-wrap text-center mb-5">
             <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
             <span class="gsap-reveal">
-            <img src="images/divider.png" alt="divider" width="76">
+              <img src="images/divider.png" alt="divider" width="76">
             </span>
           </div>
-          
+
 
           <div class="row mt-5 justify-content-between">
             <div class="col-lg-7 mb-5 mb-lg-0">
@@ -230,11 +342,17 @@
             </div>
             <div class="col-lg-4 pr-lg-5">
               <h3 class="mb-4 heading-h3"><span class="gsap-reveal">We can make it together</span></h3>
-              <p class="lead gsap-reveal">Iam passionate web developer who loves turning ideas into beautiful.Responsive 
-                website using HTML,CSS,Javascript and Bootstrap.I create project that look great on any device and provide a smooth experience.
+              <p class="lead gsap-reveal">Iam Passionate Full Stack Web Developer with experience in building modern,
+                responsive, and user-friendly web applications. Skilled in HTML, CSS, JavaScript, Node.js, Express.js,
+                and MongoDB, with a strong focus on
+                creating high-performance digital experiences. Experienced in developing custom business websites,
+                e-commerce solutions, and interactive 3D animated websites that combine creativity with functionality.
+                Dedicated to delivering clean code, intuitive user interfaces, and scalable web solutions that help
+                businesses establish a strong online presence.
 
               </p>
-              <p class="gsap-reveal"><a href="#" class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
+              <p class="gsap-reveal"><a href="#" class="btn btn-outline-pill btn-custom-light" data-toggle="modal"
+                  data-target="#cvModal" id="cv-btn">View My CV</a></p>
             </div>
           </div>
         </div>
@@ -249,46 +367,120 @@
           </div>
 
 
-          <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="75">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Javascript</span>
+          <div class="row pt-3 justify-content-center">
+
+            <!-- Frontend -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-monitor">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                  <h3 class="skill-category-title">Frontend</h3>
+                </div>
+                <div class="skill-badge-list">
+                  <span class="skill-badge-item">HTML5</span>
+                  <span class="skill-badge-item">CSS3</span>
+                  <span class="skill-badge-item">JavaScript (ES6+)</span>
+                  <span class="skill-badge-item">Bootstrap</span>
+                  <span class="skill-badge-item">Responsive Web Design</span>
+                </div>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="80">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Bootstrap</span>
+            <!-- Backend -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-server">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                      <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                      <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <h3 class="skill-category-title">Backend</h3>
+                </div>
+                <div class="skill-badge-list">
+                  <span class="skill-badge-item">Node.js</span>
+                  <span class="skill-badge-item">Express.js</span>
+                </div>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="99">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">HTML/CSS</span>
+            <!-- Database -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-database">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                      <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                    </svg>
+                  </div>
+                  <h3 class="skill-category-title">Database</h3>
+                </div>
+                <div class="skill-badge-list">
+                  <span class="skill-badge-item">MongoDB</span>
+                  <span class="skill-badge-item">Mongoose</span>
+                </div>
               </div>
             </div>
 
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="100">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Design</span>
+            <!-- Tools & Technologies -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-tool">
+                      <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                      </path>
+                    </svg>
+                  </div>
+                  <h3 class="skill-category-title">Tools &amp; Tech</h3>
+                </div>
+                <div class="skill-badge-list">
+                  <span class="skill-badge-item">Git</span>
+                  <span class="skill-badge-item">GitHub</span>
+                  <span class="skill-badge-item">VS Code</span>
+                </div>
               </div>
             </div>
+
+            <!-- Deployment -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-cloud">
+                      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="skill-category-title">Deployment</h3>
+                </div>
+                <div class="skill-badge-list">
+                  <span class="skill-badge-item">Domain &amp; Hosting Setup</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -304,9 +496,13 @@
 
 
           <div class="row justify-content-between">
-            
+
             <div class="col-md-6">
-              <form class="form-outline-style-v1" id="submit-form"action="">
+              <form class="form-outline-style-v1" id="submit-form" action="">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Portfolio Message from Hathim's Site!">
                 <div class="form-group row mb-0">
 
                   <div class="col-lg-6 form-group gsap-reveal">
@@ -323,18 +519,18 @@
                   </div>
                 </div>
                 <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
-                    </div>
+                  <div class="col-md-12 d-flex align-items-center">
+                    <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
+                    <span class="submitting"></span>
                   </div>
-           
-           
-           
-           
-           
-                </form>
-              <div id="form-message-warning" class="mt-4"></div> 
+                </div>
+
+
+
+
+
+              </form>
+              <div id="form-message-warning" class="mt-4"></div>
               <div id="form-message-success">
                 Your message was sent, thank you!
               </div>
@@ -359,84 +555,284 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
 
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              
-              <div class="footer-site-logo"><a href="#">Hathim<span>.</span></a></div>
+    <footer class="unslate_co--footer unslate_co--section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
 
-              <ul class="footer-site-social">
-                <li><a href="https://www.facebook.com/hathim.mohammed.2025">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/hathim-mohammed-17a67b38a/">Linked In</a></li>
-                <li><a href="https://www.instagram.com/_hath_xm_/">Instagram</a></li>
-              </ul>
+            <div class="footer-site-logo"><a href="#">Hathim<span>.</span></a></div>
 
-              <p class="site-copyright">
-                
-                Copyright &copy;
-                <script>
-                    $("#submit-form").submit(function (e) {
-    e.preventDefault();
+            <ul class="footer-site-social">
+              <li><a href="https://www.facebook.com/hathim.mohammed.2025">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/hathim-mohammed-17a67b38a/">Linked In</a></li>
+              <li><a href="https://www.instagram.com/_hath_xm_/">Instagram</a></li>
+            </ul>
 
-    const nameRegex = /^[A-Za-z\s]+$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            <p class="site-copyright">
 
-    const firstName = $("#name").val().trim();
-    const email = $("#email").val().trim();
-    const message = $("#message").val().trim();
+              Copyright &copy;
+              <script>
+                $("#submit-form").submit(function (e) {
+                  e.preventDefault();
 
-    if (!nameRegex.test(firstName)) {
-      alert("Please enter a valid first name.");
-      $("#firstName").focus();
-      return false;
-    }
+                  const nameRegex = /^[A-Za-z\s]+$/;
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
-      $("#email").focus();
-      return false;
-    }
+                  const name = $("#name").val().trim();
+                  const email = $("#email").val().trim();
+                  const message = $("#message").val().trim();
 
-    if (message.length < 5) {
-      alert("Please enter a longer message (at least 5 characters).");
-      $("#message").focus();
-      return false;
-    }
+                  if (!nameRegex.test(name)) {
+                    Swal.fire({
+                      icon: 'warning',
+                      title: 'Invalid Name',
+                      text: 'Please enter a valid name (letters and spaces only).',
+                      confirmButtonColor: '#d63447',
+                      background: '#181818',
+                      color: '#fff'
+                    });
+                    $("#name").focus();
+                    return false;
+                  }
 
+                  if (!emailRegex.test(email)) {
+                    Swal.fire({
+                      icon: 'warning',
+                      title: 'Invalid Email',
+                      text: 'Please enter a valid email address.',
+                      confirmButtonColor: '#d63447',
+                      background: '#181818',
+                      color: '#fff'
+                    });
+                    $("#email").focus();
+                    return false;
+                  }
 
-    $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbymPgDX0Vjsek_Pd_U4kyeXYc9XSnxXNVeqVUi5ajSxhBj6VBCMXS4Gfqnd1F-z21BlMg/exec",
-      data: $("#submit-form").serialize(),
-      method: "post",
-      success: function (response) {
-        alert("Form submitted successfully!");
-        window.location.reload();
-      },
-      error: function (err) {
-        alert("Something went wrong. Please try again!");
-      }
-    });
-  });
-                  document.write(new Date().getFullYear());
-                </script> <i>All rights reserved  </i>       
-              </p>
-            </div>
+                  if (message.length < 5) {
+                    Swal.fire({
+                      icon: 'warning',
+                      title: 'Message Too Short',
+                      text: 'Please enter a longer message (at least 5 characters).',
+                      confirmButtonColor: '#d63447',
+                      background: '#181818',
+                      color: '#fff'
+                    });
+                    $("#message").focus();
+                    return false;
+                  }
+
+                  const submitButton = $(this).find('input[type="submit"]');
+                  const originalVal = submitButton.val();
+                  submitButton.val("Sending...").prop("disabled", true);
+
+                  $.ajax({
+                    url: "https://formsubmit.co/ajax/mohammedhathim06@gmail.com",
+                    method: "POST",
+                    data: $("#submit-form").serialize(),
+                    dataType: "json",
+                    success: function (response) {
+                      submitButton.val(originalVal).prop("disabled", false);
+                      Swal.fire({
+                        icon: 'success',
+                        title: 'Feedback Submitted!',
+                        text: 'Your message has been sent successfully!',
+                        confirmButtonColor: '#d63447',
+                        background: '#181818',
+                        color: '#fff'
+                      });
+                      $("#submit-form")[0].reset();
+                    },
+                    error: function (err) {
+                      submitButton.val(originalVal).prop("disabled", false);
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong. Please try again!',
+                        confirmButtonColor: '#d63447',
+                        background: '#181818',
+                        color: '#fff'
+                      });
+                    }
+                  });
+                });
+                document.write(new Date().getFullYear());
+              </script> <i>All rights reserved </i>
+            </p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      
+
+  </div>
+  <div id="unslate_co--overlayer"></div>
+  <div class="site-loader-wrap">
+    <div class="site-loader"></div>
+  </div>
+
+  <!-- CV Modal -->
+  <div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content cv-modal-content">
+        <button type="button" class="cv-close-btn" data-dismiss="modal" aria-label="Close">&times;</button>
+        <div class="cv-wrapper">
+
+          <!-- Left Panel -->
+          <div class="cv-left">
+            <div class="cv-avatar-wrap">
+              <img src="images/pic-1.jpg" alt="Hathim" class="cv-avatar">
+            </div>
+            <div class="cv-name-block">
+              <h2 class="cv-name">Hathim<span>.</span></h2>
+              <p class="cv-role">Frontend Web Developer</p>
+            </div>
+
+            <div class="cv-contact-block">
+              <h4 class="cv-section-title">Contact</h4>
+              <div class="cv-contact-item">
+                <span class="cv-contact-icon icon-envelope-o"></span>
+                <span>mohammedhathim06@gmail.com</span>
+              </div>
+              <div class="cv-contact-item">
+                <span class="cv-contact-icon icon-phone"></span>
+                <span>+91 9995928710</span>
+              </div>
+              <div class="cv-contact-item">
+                <span class="cv-contact-icon icon-map-marker"></span>
+                <span>Ponnani, Malappuram,<br>Kerala, India</span>
+              </div>
+            </div>
+
+            <div class="cv-skills-block">
+              <h4 class="cv-section-title">Skills</h4>
+
+              <div class="cv-skill-category">
+                <div class="cv-skill-cat-title">Frontend</div>
+                <div class="cv-skill-tags">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript
+                    (ES6+)</span><span>Bootstrap</span><span>Responsive Web Design</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-category">
+                <div class="cv-skill-cat-title">Backend</div>
+                <div class="cv-skill-tags">
+                  <span>Node.js</span><span>Express.js</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-category">
+                <div class="cv-skill-cat-title">Database</div>
+                <div class="cv-skill-tags">
+                  <span>MongoDB</span><span>Mongoose</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-category">
+                <div class="cv-skill-cat-title">Tools &amp; Tech</div>
+                <div class="cv-skill-tags">
+                  <span>Git</span><span>GitHub</span><span>VS Code</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-category">
+                <div class="cv-skill-cat-title">Deployment</div>
+                <div class="cv-skill-tags">
+                  <span>Domain &amp; Hosting Setup</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-social-block">
+              <a href="https://www.linkedin.com/in/hathim-mohammed-17a67b38a/" target="_blank"
+                class="cv-social-link">LinkedIn</a>
+              <a href="https://github.com/hathim06" target="_blank" class="cv-social-link">GitHub</a>
+              <a href="https://www.instagram.com/_hath_xm_/" target="_blank" class="cv-social-link">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="cv-right">
+            <div class="cv-section">
+              <h3 class="cv-right-section-title">About Me</h3>
+              <p class="cv-about-text">I am a passionate frontend web developer who loves turning ideas into beautiful,
+                responsive websites using HTML, CSS, JavaScript and Bootstrap. I create projects that look great on any
+                device and deliver smooth, engaging user experiences. I enjoy both personal creative projects and
+                real-world client work.</p>
+            </div>
+
+            <div class="cv-section">
+              <h3 class="cv-right-section-title">Client Work</h3>
+              <div class="cv-project-item client-proj">
+                <div class="cv-project-header">
+                  <h4>Root Millers &mdash; Rewards &amp; Loyalty Platform</h4>
+                  <span class="cv-badge-label client-lbl">&#9733; Client</span>
+                </div>
+                <p>Designed and developed a full loyalty rewards platform for Root Millers, featuring a raffle ticket
+                  system, collect loyalty points, and &ldquo;The 50 Fest&rdquo; campaign landing page with live event
+                  promotions.</p>
+                <div class="cv-project-tags">
+                  <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h3 class="cv-right-section-title">Personal Projects</h3>
+              <div class="cv-projects-grid">
+                <div class="cv-project-item personal-proj">
+                  <h4>Mango Juice UI</h4>
+                  <p>Vibrant landing page for a mango juice brand with smooth animations.</p>
+                  <div class="cv-project-tags"><span>HTML5</span><span>CSS3</span><span>JS</span><span>Bootstrap</span>
+                  </div>
+                </div>
+                <div class="cv-project-item personal-proj">
+                  <h4>Storia Pomegranate</h4>
+                  <p>Premium juice landing page with immersive red visuals and bold typography.</p>
+                  <div class="cv-project-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+                </div>
+                <div class="cv-project-item personal-proj">
+                  <h4>Trufit Smartwatch</h4>
+                  <p>E-commerce landing page with dark theme for a smartwatch brand.</p>
+                  <div class="cv-project-tags"><span>UX/UI</span><span>CSS3</span><span>Interactive</span></div>
+                </div>
+                <div class="cv-project-item personal-proj">
+                  <h4>7UP Clone</h4>
+                  <p>Pixel-perfect responsive clone of the official 7UP website.</p>
+                  <div class="cv-project-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+                </div>
+                <div class="cv-project-item personal-proj">
+                  <h4>Starbucks Clone</h4>
+                  <p>Fully responsive Starbucks website clone with navigation.</p>
+                  <div class="cv-project-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+                </div>
+                <div class="cv-project-item personal-proj">
+                  <h4>Personal Portfolio</h4>
+                  <p>My own portfolio site showcasing all works and skills.</p>
+                  <div class="cv-project-tags"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end cv-wrapper -->
+      </div>
     </div>
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
-    </div>
+  </div><!-- end #cvModal -->
 
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/scripts-dist.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Inject project type badges onto portfolio cards
+    $(document).ready(function () {
+      $('.portfolio-item[data-id="4"]').prepend('<span class="project-type-badge client-badge">&#9733; Client Work</span>');
+      $('.portfolio-item').not('[data-id="4"]').prepend('<span class="project-type-badge personal-badge">Personal</span>');
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
